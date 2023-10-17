@@ -17,3 +17,8 @@
 - uosc #简洁好用的 GUI 界面，支持自定义组件
 - speed-control #实现速度快捷切换的脚本
 - thumbfast #进度条显示缩略图脚本
+- stats #文件信息的汉化版
+- autoload #自动加载下一个视频
+
+
+
