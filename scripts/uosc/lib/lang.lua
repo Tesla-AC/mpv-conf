@@ -102,6 +102,7 @@ lang = {
 	_button_ext11 = '截屏',
 	_button_ext12 = '统计数据',
 	_button_ext13 = '时间轴预览',
+	_button_ext14 = '静音/取消静音',
 
 }
 

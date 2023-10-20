@@ -24,16 +24,19 @@ function Controls:init()
 		menu               = 'command:menu:script-binding uosc/menu-blurred?' .. lang._button01,
 		subtitles          = 'command:subtitles:script-binding uosc/subtitles#sub>0?' .. lang._button02,
 		audio              = 'command:graphic_eq:script-binding uosc/audio#audio>1?' .. lang._button03,
+		audioAC             = 'command:library_music:script-binding uosc/audio#audio>1?' .. lang._button03,
 		['audio-device']   = 'command:speaker:script-binding uosc/audio-device?' .. lang._button04,
 		video              = 'command:theaters:script-binding uosc/video#video>1?' .. lang._button05,
 		playlist           = 'command:list_alt:script-binding uosc/playlist?' .. lang._button06,
+		playlistAC         = 'command:format_list_bulleted:script-binding uosc/playlist?' .. lang._button06,
 		chapters           = 'command:bookmark:script-binding uosc/chapters#chapters>0?' .. lang._button07,
 		editions           = 'command:bookmarks:script-binding uosc/editions#editions>1?' .. lang._button08,
 		['stream-quality'] = 'command:high_quality:script-binding uosc/stream-quality?' .. lang._button09,
 		['open-file']      = 'command:file_open:script-binding uosc/open-file?' .. lang._button10,
 		items              = 'command:list_alt:script-binding uosc/items?' .. lang._button11,
-		prev               = 'command:arrow_back_ios:script-binding uosc/prev?' .. lang._button12,
-		['next']           = 'command:arrow_forward_ios:script-binding uosc/next?' .. lang._button13,
+		itemsAC             = 'command:format_list_bulleted:script-binding uosc/items?' .. lang._button11,
+		prev               = 'command:skip_previous:script-binding uosc/prev?' .. lang._button12,
+		['next']           = 'command:skip_next:script-binding uosc/next?' .. lang._button13,
 		first              = 'command:first_page:script-binding uosc/first?' .. lang._button14,
 		last               = 'command:last_page:script-binding uosc/last?' .. lang._button15,
 		['loop-playlist']  = 'cycle:repeat:loop-playlist:no/inf!?' .. lang._button16,
@@ -43,7 +46,7 @@ function Controls:init()
 
 		-- 自定义的捷径
 		['play_pause']     = 'cycle:not_started:pause:no=play_circle/yes=pause_circle?' .. lang._button_ext01,
-		['pause_play']     = 'cycle:not_started:pause:no=pause_circle/yes=play_circle?' .. lang._button_ext02,
+		['pause_play']     = 'cycle:not_started:pause:no=pause/yes=play_arrow?' .. lang._button_ext02,
 		['pl-prev']        = 'command:navigate_before:playlist-prev?' .. lang._button_ext03,
 		['pl-next']        = 'command:navigate_next:playlist-next?' .. lang._button_ext04,
 		border             = 'toggle:border_style:border?' .. lang._button_ext05,
@@ -53,10 +56,11 @@ function Controls:init()
 		deband             = 'cycle:texture:deband:no/yes!?' .. lang._button_ext09,
 		deint              = 'cycle:clear_all:deinterlace:no/yes!?' .. lang._button_ext10,
 		['shot-vid']       = 'command:screenshot:screenshot video?' .. lang._button_ext11,
+		screenshotAC       = 'command:perm_media:screenshot video?' .. lang._button_ext11,
 
 		['ST-stats_tog']   = 'command:info_outline:script-binding display-stats-toggle?' .. lang._button_ext12,
 		['ST-thumb_tog']   = 'command:panorama:script-binding thumb_toggle?' .. lang._button_ext13,
-
+		volumeAC           = 'cycle:volume_up:mute:no/yes=volume_off?' ..lang._button_ext14,
 	}
 
 	-- Parse out disposition/config pairs
